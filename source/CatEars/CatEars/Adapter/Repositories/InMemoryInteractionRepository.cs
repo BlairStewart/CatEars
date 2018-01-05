@@ -49,7 +49,7 @@ namespace CatEars.Adapter.Repositories
                 autoIncrement++;
             }
 
-            dictionary.Add(newInteraction.InteractionId, newInteraction);
+            dictionary[newInteraction.InteractionId] = newInteraction;
             return newInteraction;
         }
     }

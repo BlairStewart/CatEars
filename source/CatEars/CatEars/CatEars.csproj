@@ -53,6 +53,12 @@
     <Compile Include="Adapter\UI\AddCat.Designer.cs">
       <DependentUpon>AddCat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adapter\UI\EditCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adapter\UI\EditCat.Designer.cs">
+      <DependentUpon>EditCat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Domain\BreedEnum.cs" />
     <Compile Include="Domain\Cat.cs" />
     <Compile Include="Domain\CatId.cs" />
@@ -73,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Adapter\UI\AddCat.resx">
       <DependentUpon>AddCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adapter\UI\EditCat.resx">
+      <DependentUpon>EditCat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

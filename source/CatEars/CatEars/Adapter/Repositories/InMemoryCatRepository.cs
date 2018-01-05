@@ -58,7 +58,7 @@ namespace CatEars.Adapter.Repositories
                 autoIncrement++;
             }
 
-            dictionary.Add(newCat.CatId, newCat);
+            dictionary[newCat.CatId] = newCat;
             return newCat;
         }
     }
