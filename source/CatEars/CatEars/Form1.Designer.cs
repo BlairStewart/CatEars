@@ -29,11 +29,36 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.uxAddCat = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // uxAddCat
+            // 
+            this.uxAddCat.Location = new System.Drawing.Point(26, 30);
+            this.uxAddCat.Name = "uxAddCat";
+            this.uxAddCat.Size = new System.Drawing.Size(75, 23);
+            this.uxAddCat.TabIndex = 0;
+            this.uxAddCat.Text = "Add &Cat";
+            this.uxAddCat.UseVisualStyleBackColor = true;
+            this.uxAddCat.Click += new System.EventHandler(this.uxAddCat_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(836, 624);
+            this.Controls.Add(this.uxAddCat);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.IO.Ports.SerialPort serialPort1;
+        private System.Windows.Forms.Button uxAddCat;
     }
 }
 
