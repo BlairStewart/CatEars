@@ -2,6 +2,7 @@
 {
     public enum BreedEnum
     {
-        Tabby=1
+        Tabby=1,
+        Calico=2
     }
 }

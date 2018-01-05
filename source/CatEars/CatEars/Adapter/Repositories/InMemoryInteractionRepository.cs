@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using CatEars.Domain;
 using CatEars.Domain.Repositories;
 
@@ -34,6 +35,13 @@ namespace CatEars.Adapter.Repositories
         public IEnumerable<Interaction> RetrieveAll()
         {
             return dictionary.Values;
+        }
+
+        public IEnumerable<Interaction> RetrieveAllForCat(CatId catId)
+        {
+            return from x in dictionary.Values
+                   where x.CatId.Equals(catId)
+                   select x;
         }
 
         public Interaction Save(Interaction interaction)

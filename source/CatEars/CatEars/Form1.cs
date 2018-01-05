@@ -17,20 +17,24 @@ namespace CatEars
     public partial class Form1 : Form
     {
         ICatRepository catRepository;
+        IInteractionRepository interactionRepository;
         IDictionary<int, CatId> catListIndex;
 
         public Form1()
         {
             catListIndex = new Dictionary<int, CatId>();
             catRepository = new InMemoryCatRepository();
+            interactionRepository = new InMemoryInteractionRepository();
             InitializeComponent();
             LoadCatList();
         }
 
         private void uxAddCat_Click(object sender, EventArgs e)
         {
-            AddCat addCatForm = new AddCat(catRepository);
-            addCatForm.TopLevel = false;
+            AddCat addCatForm = new AddCat(catRepository)
+            {
+                TopLevel = false
+            };
             addCatForm.Saved += AddCatForm_Saved;
             Controls.Add(addCatForm);
             addCatForm.Show();
@@ -51,6 +55,7 @@ namespace CatEars
         {
             var cats = catRepository.RetrieveAll();
             catListIndex.Clear();
+            uxCatList.Items.Clear();
             foreach(var cat in cats)
             {
                 catListIndex.Add(uxCatList.Items.Add(cat.Name), cat.CatId);
@@ -61,8 +66,10 @@ namespace CatEars
         {
             CatId catId = catListIndex[uxCatList.SelectedIndex];
             Cat cat = catRepository.Retrieve(catId);
-            EditCat editCatForm = new EditCat(catRepository, cat);
-            editCatForm.TopLevel = false;
+            EditCat editCatForm = new EditCat(catRepository, interactionRepository, cat)
+            {
+                TopLevel = false
+            };
             editCatForm.Saved += EditCatForm_Saved;
             Controls.Add(editCatForm);
             editCatForm.Show();

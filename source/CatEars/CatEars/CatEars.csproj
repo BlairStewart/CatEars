@@ -53,6 +53,12 @@
     <Compile Include="Adapter\UI\AddCat.Designer.cs">
       <DependentUpon>AddCat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adapter\UI\AddInteraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adapter\UI\AddInteraction.Designer.cs">
+      <DependentUpon>AddInteraction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adapter\UI\EditCat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Adapter\UI\AddCat.resx">
       <DependentUpon>AddCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adapter\UI\AddInteraction.resx">
+      <DependentUpon>AddInteraction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Adapter\UI\EditCat.resx">
       <DependentUpon>EditCat.cs</DependentUpon>

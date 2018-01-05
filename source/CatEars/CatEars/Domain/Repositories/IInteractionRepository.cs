@@ -8,5 +8,6 @@ namespace CatEars.Domain.Repositories
         void Delete(InteractionId interactionId);
         Interaction Retrieve(InteractionId interactionId);
         IEnumerable<Interaction> RetrieveAll();
+        IEnumerable<Interaction> RetrieveAllForCat(CatId catId);
     }
 }

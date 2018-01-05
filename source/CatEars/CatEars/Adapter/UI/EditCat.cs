@@ -15,15 +15,27 @@ namespace CatEars.Adapter.UI
     public partial class EditCat : Form
     {
         private ICatRepository catRepository;
+        private IInteractionRepository interactionRepository;
         private Cat cat;
+        private IDictionary<int, Interaction> interactionListIndex;
 
         public EventHandler<EventArgs> Saved;
-        public EditCat(ICatRepository catRepository, Cat cat)
+        public EditCat(ICatRepository catRepository, IInteractionRepository interactionRepository, Cat cat)
         {
             this.catRepository = catRepository;
+            this.interactionRepository = interactionRepository;
             this.cat = cat;
+            this.interactionListIndex = new Dictionary<int, Interaction>();
             InitializeComponent();
+            InitializeUx();
             FillUi(cat);
+            LoadInteractionList();
+        }
+
+        private void InitializeUx()
+        {
+            string[] breedNames = Enum.GetNames(typeof(BreedEnum));
+            uxCatBreed.Items.AddRange(breedNames);
         }
 
         private void FillUi(Cat cat)
@@ -34,6 +46,21 @@ namespace CatEars.Adapter.UI
             uxCreated.Text = cat.DateCreated;
             uxUpdated.Text = cat.DateUpdated;
             uxDeleted.Text = cat.DateDeleted;
+        }
+
+        private void LoadInteractionList()
+        {
+            var interactions = interactionRepository.RetrieveAllForCat(cat.CatId);
+            interactionListIndex.Clear();
+            uxInteractions.Items.Clear();
+            foreach (var interaction in interactions)
+            {
+                interactionListIndex.Add(
+                    uxInteractions.Items.Add(
+                        interaction.ToString()
+                        ), 
+                    interaction);
+            }
         }
 
         private void uxCancel_Click(object sender, EventArgs e)
@@ -51,8 +78,26 @@ namespace CatEars.Adapter.UI
                 cat.DateUpdated,
                 cat.DateDeleted
                 );
-            catRepository.Save(cat);
+            catRepository.Save(updateCat);
             Saved?.Invoke(this, EventArgs.Empty);
+            Close();
+        }
+
+        private void uxAddInteraction_Click(object sender, EventArgs e)
+        {
+            AddInteraction addInteractionForm = new AddInteraction(interactionRepository, cat.CatId)
+            {
+                TopLevel = false
+            };
+            addInteractionForm.Saved += addInteractionForm_Saved;
+            Parent.Controls.Add(addInteractionForm);
+            addInteractionForm.Show();
+            addInteractionForm.BringToFront();
+        }
+
+        private void addInteractionForm_Saved(object sender, EventArgs e)
+        {
+            LoadInteractionList();
         }
     }
 }

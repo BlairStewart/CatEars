@@ -10,6 +10,11 @@ namespace CatEars.Domain
         private InteractionTypeEnum interactionType;
         private String createdDate;
 
+        public static Interaction ForPersistance(CatId catId, InteractionTypeEnum interactionType)
+        {
+            return new Interaction(null, catId, interactionType, null);
+        }
+
         public Interaction(InteractionId interactionId, CatId catId, InteractionTypeEnum interactionType, string createdDate)
         {
             this.interactionId = interactionId;
@@ -41,6 +46,11 @@ namespace CatEars.Domain
             hashCode = hashCode * -1521134295 + interactionType.GetHashCode();
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(createdDate);
             return hashCode;
+        }
+
+        public override string ToString()
+        {
+            return $"{interactionType} -- {createdDate}";
         }
     }
 }
