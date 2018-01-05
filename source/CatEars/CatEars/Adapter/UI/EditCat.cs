@@ -99,5 +99,10 @@ namespace CatEars.Adapter.UI
         {
             LoadInteractionList();
         }
+
+        private void uxInteractions_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

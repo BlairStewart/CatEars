@@ -175,6 +175,7 @@
             this.uxInteractions.Name = "uxInteractions";
             this.uxInteractions.Size = new System.Drawing.Size(315, 225);
             this.uxInteractions.TabIndex = 21;
+            this.uxInteractions.Click += new System.EventHandler(this.uxInteractions_Click);
             // 
             // label7
             // 
