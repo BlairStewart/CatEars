@@ -1,5 +1,9 @@
 package Crystalshard;
 
+import Crystalshard.CatEars.domain.identifier.CatId;
+import Crystalshard.CatEars.domain.identifier.CoatPatternId;
+import Crystalshard.CatEars.domain.identifier.PersonId;
+
 import java.net.URL;
 import java.util.Random;
 
@@ -15,6 +19,18 @@ public class BaseTest {
 
         }
         return null;
+    }
+
+    protected CatId anonCatId() {
+        return CatId.of(anonInt());
+    }
+
+    protected PersonId anonPersonId() {
+        return PersonId.of(anonInt());
+    }
+
+    protected CoatPatternId anonCoatPatternId() {
+        return CoatPatternId.of(anonInt());
     }
 
     protected String anonString() {
