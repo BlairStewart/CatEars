@@ -42,6 +42,7 @@ namespace CatEars.Adapter.UI
         {
             uxId.Text = cat.CatId.GetValue().ToString();
             uxCatName.Text = cat.Name;
+            uxCatName.SelectionStart = uxCatName.Text.Length;
             uxCatBreed.Text = cat.Breed.ToString();
             uxCreated.Text = cat.DateCreated;
             uxUpdated.Text = cat.DateUpdated;

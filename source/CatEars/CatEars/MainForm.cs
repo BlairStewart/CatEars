@@ -14,13 +14,13 @@ using CatEars.Domain;
 
 namespace CatEars
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         ICatRepository catRepository;
         IInteractionRepository interactionRepository;
         IDictionary<int, CatId> catListIndex;
 
-        public Form1()
+        public MainForm()
         {
             catListIndex = new Dictionary<int, CatId>();
             catRepository = new InMemoryCatRepository();
@@ -64,16 +64,19 @@ namespace CatEars
 
         private void uxCatList_DoubleClick(object sender, EventArgs e)
         {
-            CatId catId = catListIndex[uxCatList.SelectedIndex];
-            Cat cat = catRepository.Retrieve(catId);
-            EditCat editCatForm = new EditCat(catRepository, interactionRepository, cat)
+            if (uxCatList.SelectedIndex >= 0)
             {
-                TopLevel = false
-            };
-            editCatForm.Saved += EditCatForm_Saved;
-            Controls.Add(editCatForm);
-            editCatForm.Show();
-            editCatForm.BringToFront();
+                CatId catId = catListIndex[uxCatList.SelectedIndex];
+                Cat cat = catRepository.Retrieve(catId);
+                EditCat editCatForm = new EditCat(catRepository, interactionRepository, cat)
+                {
+                    TopLevel = false
+                };
+                editCatForm.Saved += EditCatForm_Saved;
+                Controls.Add(editCatForm);
+                editCatForm.Show();
+                editCatForm.BringToFront();
+            }
         }
     }
 }
