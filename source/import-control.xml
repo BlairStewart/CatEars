@@ -9,6 +9,7 @@
     <allow pkg="sun"/>
     <allow pkg="javax"/>
     <allow pkg="crystalshard.catears"/>
+    <allow pkg="spark"/>
     <subpackage name="adapter">
         <allow pkg="spark"/>
         <subpackage name="guice">

@@ -10,13 +10,23 @@ import crystalshard.catears.domain.InvalidApplicationConfigurationException;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import org.apache.log4j.Logger;
+import spark.servlet.SparkApplication;
 
 import static crystalshard.catears.domain.LessCode.fmt;
 
-public class App {
+public class App implements SparkApplication {
     private static Logger log = Logger.getLogger(App.class);
 
     public static void main( String[] args ) {
+        startApp();
+    }
+
+    @Override
+    public void init() {
+        startApp();
+    }
+
+    private static void startApp() {
         try {
             Injector injector = Guice.createInjector(new AppModule(), new ConfigurationModule());
             AppConfiguration configuration = injector.getInstance(AppConfiguration.class);
