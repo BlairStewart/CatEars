@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.domain.identifier;
+package crystalshard.catears.domain.identifier;
 
 public class CatId extends AutoincrementIntegerId {
 

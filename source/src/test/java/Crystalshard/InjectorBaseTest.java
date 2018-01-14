@@ -1,4 +1,4 @@
-package Crystalshard;
+package crystalshard;
 
 import com.google.inject.Injector;
 

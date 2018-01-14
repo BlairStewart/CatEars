@@ -1,7 +1,7 @@
-package Crystalshard.CatEars.adapter.configuration;
+package crystalshard.catears.adapter.configuration;
 
-import Crystalshard.CatEars.domain.AppConfiguration;
-import Crystalshard.CatEars.domain.DatabaseType;
+import crystalshard.catears.domain.AppConfiguration;
+import crystalshard.catears.domain.DatabaseType;
 import com.google.inject.Inject;
 import org.apache.log4j.Logger;
 

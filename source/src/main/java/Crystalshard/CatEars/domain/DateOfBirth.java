@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.log4j.Logger;
@@ -7,9 +7,6 @@ import org.joda.time.chrono.ISOChronology;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import static Crystalshard.CatEars.domain.LessCode.fmt;
-import static Crystalshard.CatEars.domain.LessCode.padLeftZeros;
 
 public class DateOfBirth {
 
@@ -21,7 +18,7 @@ public class DateOfBirth {
     public static DateOfBirth fromString(String dateOfBirth) {
         Matcher matcher = iso8601Pattern.matcher(dateOfBirth);
         if (!matcher.matches()) {
-            String message = fmt("Attempted to create DateOfBirth from an invalid string: %s", dateOfBirth);
+            String message = LessCode.fmt("Attempted to create DateOfBirth from an invalid string: %s", dateOfBirth);
             logger.error(message);
             throw new InvalidDateOfBirthStringException(message);
         }
@@ -59,10 +56,10 @@ public class DateOfBirth {
 
     @Override
     public String toString() {
-        return fmt("%s-%s-%s",
-                padLeftZeros(Integer.toString(localDate.getYear()), 2),
-                padLeftZeros(Integer.toString(localDate.getMonthOfYear()), 2),
-                padLeftZeros(Integer.toString(localDate.getDayOfMonth()), 2));
+        return LessCode.fmt("%s-%s-%s",
+                LessCode.padLeftZeros(Integer.toString(localDate.getYear()), 2),
+                LessCode.padLeftZeros(Integer.toString(localDate.getMonthOfYear()), 2),
+                LessCode.padLeftZeros(Integer.toString(localDate.getDayOfMonth()), 2));
     }
 
     @Override

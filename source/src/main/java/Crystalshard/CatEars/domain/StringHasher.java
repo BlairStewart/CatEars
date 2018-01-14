@@ -1,6 +1,6 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
-import Crystalshard.CatEars.domain.atomiccontext.ClearTextPasswordContext;
+import crystalshard.catears.domain.atomiccontext.ClearTextPasswordContext;
 
 public interface StringHasher {
     PasswordHashContext getHash(ClearTextPasswordContext password);

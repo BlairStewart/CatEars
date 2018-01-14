@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
 public class PhoneNumber {
 

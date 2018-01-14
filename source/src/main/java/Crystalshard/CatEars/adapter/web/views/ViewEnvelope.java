@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.adapter.web.views;
+package crystalshard.catears.adapter.web.views;
 
 public class ViewEnvelope {
 

@@ -1,6 +1,6 @@
-package Crystalshard.CatEars.adapter.spark;
+package crystalshard.catears.adapter.spark;
 
-import Crystalshard.CatEars.adapter.web.views.ViewEnvelope;
+import crystalshard.catears.adapter.web.views.ViewEnvelope;
 import spark.Request;
 import spark.Response;
 import spark.Route;

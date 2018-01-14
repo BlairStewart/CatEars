@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.domain.identifier;
+package crystalshard.catears.domain.identifier;
 
 import java.util.regex.Pattern;
 

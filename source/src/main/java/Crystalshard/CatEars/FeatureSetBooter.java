@@ -1,7 +1,7 @@
-package Crystalshard.CatEars;
+package crystalshard.catears;
 
-import Crystalshard.CatEars.adapter.web.WebComponent;
-import Crystalshard.CatEars.domain.StateInitializer;
+import crystalshard.catears.adapter.web.WebComponent;
+import crystalshard.catears.domain.StateInitializer;
 import com.google.inject.Inject;
 
 public class FeatureSetBooter {

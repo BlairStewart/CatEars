@@ -1,14 +1,13 @@
-package Crystalshard.CatEars.adapter.configuration;
+package crystalshard.catears.adapter.configuration;
 
 import org.apache.log4j.Logger;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Map;
 import java.util.Properties;
 
-import static Crystalshard.CatEars.domain.LessCode.fmt;
+import static crystalshard.catears.domain.LessCode.fmt;
 
 public class PropertyFileFileSystemLoader implements PropertyFile {
     private Logger logger = Logger.getLogger(PropertyFileFileSystemLoader.class);

@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.adapter.web;
+package crystalshard.catears.adapter.web;
 
 import spark.Route;
 import spark.Spark;

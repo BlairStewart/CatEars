@@ -1,6 +1,6 @@
-package Crystalshard.CatEars.adapter.guice;
+package crystalshard.catears.adapter.guice;
 
-import Crystalshard.CatEars.adapter.spark.JsonResponseTransformer;
+import crystalshard.catears.adapter.spark.JsonResponseTransformer;
 import com.google.inject.Provider;
 import spark.ResponseTransformer;
 

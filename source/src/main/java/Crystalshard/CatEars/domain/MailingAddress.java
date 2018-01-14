@@ -1,9 +1,9 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
-import static Crystalshard.CatEars.domain.LessCode.fmt;
+import static crystalshard.catears.domain.LessCode.fmt;
 
 public class MailingAddress {
 

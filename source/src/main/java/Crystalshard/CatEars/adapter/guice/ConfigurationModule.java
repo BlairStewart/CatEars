@@ -1,8 +1,7 @@
-package Crystalshard.CatEars.adapter.guice;
+package crystalshard.catears.adapter.guice;
 
-import Crystalshard.CatEars.adapter.configuration.PropertyStack;
-import Crystalshard.CatEars.adapter.spark.JsonResponseTransformer;
-import Crystalshard.CatEars.domain.AppConfiguration;
+import crystalshard.catears.adapter.configuration.PropertyStack;
+import crystalshard.catears.domain.AppConfiguration;
 import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;
 import spark.ResponseTransformer;

@@ -1,6 +1,6 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
-import Crystalshard.InjectorBaseTest;
+import crystalshard.InjectorBaseTest;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

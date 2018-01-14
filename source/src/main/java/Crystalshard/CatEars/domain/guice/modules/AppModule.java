@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.domain.guice.modules;
+package crystalshard.catears.domain.guice.modules;
 
 import com.google.inject.AbstractModule;
 

@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.adapter.spark;
+package crystalshard.catears.adapter.spark;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

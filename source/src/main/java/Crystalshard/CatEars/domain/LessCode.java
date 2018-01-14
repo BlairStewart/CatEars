@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
 public class LessCode {
     public static String fmt(String stringToFormat, String... args) {

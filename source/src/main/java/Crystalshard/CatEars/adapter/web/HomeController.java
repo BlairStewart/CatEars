@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.adapter.web;
+package crystalshard.catears.adapter.web;
 
 import com.google.inject.Inject;
 import spark.ModelAndView;

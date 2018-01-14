@@ -1,8 +1,8 @@
-package Crystalshard.CatEars.adapter;
+package crystalshard.catears.adapter;
 
-import Crystalshard.CatEars.domain.PasswordHashContext;
-import Crystalshard.CatEars.domain.StringHasher;
-import Crystalshard.CatEars.domain.atomiccontext.ClearTextPasswordContext;
+import crystalshard.catears.domain.PasswordHashContext;
+import crystalshard.catears.domain.StringHasher;
+import crystalshard.catears.domain.atomiccontext.ClearTextPasswordContext;
 import org.apache.log4j.Logger;
 
 import java.nio.charset.StandardCharsets;

@@ -1,7 +1,7 @@
-package Crystalshard.CatEars.adapter.web;
+package crystalshard.catears.adapter.web;
 
-import Crystalshard.CatEars.domain.AppConfiguration;
-import Crystalshard.CatEars.domain.Component;
+import crystalshard.catears.domain.AppConfiguration;
+import crystalshard.catears.domain.Component;
 import com.google.inject.Inject;
 
 import static spark.Spark.port;

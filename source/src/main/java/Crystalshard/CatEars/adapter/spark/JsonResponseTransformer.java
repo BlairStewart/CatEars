@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.adapter.spark;
+package crystalshard.catears.adapter.spark;
 
 import com.google.gson.GsonBuilder;
 import spark.ResponseTransformer;

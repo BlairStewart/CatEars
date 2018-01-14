@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.adapter.configuration;
+package crystalshard.catears.adapter.configuration;
 
 import com.google.inject.Inject;
 

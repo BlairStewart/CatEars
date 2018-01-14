@@ -1,9 +1,9 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
-import Crystalshard.CatEars.domain.atomiccontext.CatName;
-import Crystalshard.CatEars.domain.atomiccontext.TattooNumber;
-import Crystalshard.CatEars.domain.identifier.CatId;
-import Crystalshard.CatEars.domain.identifier.PersonId;
+import crystalshard.catears.domain.atomiccontext.CatName;
+import crystalshard.catears.domain.atomiccontext.TattooNumber;
+import crystalshard.catears.domain.identifier.CatId;
+import crystalshard.catears.domain.identifier.PersonId;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;

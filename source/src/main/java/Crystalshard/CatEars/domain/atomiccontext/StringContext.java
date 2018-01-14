@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.domain.atomiccontext;
+package crystalshard.catears.domain.atomiccontext;
 
 import org.apache.commons.lang.builder.CompareToBuilder;
 

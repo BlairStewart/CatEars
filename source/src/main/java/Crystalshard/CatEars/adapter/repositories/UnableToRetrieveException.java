@@ -1,6 +1,6 @@
-package Crystalshard.CatEars.adapter.repositories;
+package crystalshard.catears.adapter.repositories;
 
-import Crystalshard.CatEars.adapter.spark.NotFoundException;
+import crystalshard.catears.adapter.spark.NotFoundException;
 
 public class UnableToRetrieveException extends NotFoundException {
     public UnableToRetrieveException(String message) {

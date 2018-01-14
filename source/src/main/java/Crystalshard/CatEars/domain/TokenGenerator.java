@@ -1,6 +1,6 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
-import Crystalshard.CatEars.domain.atomiccontext.AuthTokenStringContext;
+import crystalshard.catears.domain.atomiccontext.AuthTokenStringContext;
 
 public interface TokenGenerator {
     AuthTokenStringContext randomToken();

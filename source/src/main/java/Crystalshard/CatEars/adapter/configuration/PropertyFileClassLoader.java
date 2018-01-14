@@ -1,12 +1,11 @@
-package Crystalshard.CatEars.adapter.configuration;
+package crystalshard.catears.adapter.configuration;
 
+import crystalshard.catears.domain.LessCode;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-
-import static Crystalshard.CatEars.domain.LessCode.fmt;
 
 public class PropertyFileClassLoader implements PropertyFile {
 
@@ -28,7 +27,7 @@ public class PropertyFileClassLoader implements PropertyFile {
             }
             else {
                 properties.load(input);
-                logger.info(fmt("Loaded property file from class location: %s", getClass().getClassLoader().getResource(propertyFileLocation).toString()));
+                logger.info(LessCode.fmt("Loaded property file from class location: %s", getClass().getClassLoader().getResource(propertyFileLocation).toString()));
             }
         }
         catch (IOException ex) {

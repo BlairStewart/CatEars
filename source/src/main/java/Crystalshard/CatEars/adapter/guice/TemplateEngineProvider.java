@@ -1,6 +1,6 @@
-package Crystalshard.CatEars.adapter.guice;
+package crystalshard.catears.adapter.guice;
 
-import Crystalshard.CatEars.domain.AppConfiguration;
+import crystalshard.catears.domain.AppConfiguration;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 import org.apache.velocity.app.VelocityEngine;

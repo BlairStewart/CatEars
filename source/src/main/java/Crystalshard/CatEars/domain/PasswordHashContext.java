@@ -1,6 +1,6 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
-import Crystalshard.CatEars.domain.atomiccontext.StringContext;
+import crystalshard.catears.domain.atomiccontext.StringContext;
 
 public class PasswordHashContext extends StringContext {
 

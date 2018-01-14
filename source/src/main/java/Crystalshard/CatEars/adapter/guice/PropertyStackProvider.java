@@ -1,9 +1,9 @@
-package Crystalshard.CatEars.adapter.guice;
+package crystalshard.catears.adapter.guice;
 
-import Crystalshard.CatEars.adapter.configuration.OverridePropertyFileLocation;
-import Crystalshard.CatEars.adapter.configuration.PropertyFileClassLoader;
-import Crystalshard.CatEars.adapter.configuration.PropertyFileFileSystemLoader;
-import Crystalshard.CatEars.adapter.configuration.PropertyStack;
+import crystalshard.catears.adapter.configuration.PropertyFileFileSystemLoader;
+import crystalshard.catears.adapter.configuration.PropertyStack;
+import crystalshard.catears.adapter.configuration.OverridePropertyFileLocation;
+import crystalshard.catears.adapter.configuration.PropertyFileClassLoader;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 

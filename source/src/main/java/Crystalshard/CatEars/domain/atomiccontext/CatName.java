@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.domain.atomiccontext;
+package crystalshard.catears.domain.atomiccontext;
 
 public class CatName extends StringContext {
 

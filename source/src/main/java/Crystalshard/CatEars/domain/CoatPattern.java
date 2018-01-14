@@ -1,7 +1,7 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
-import Crystalshard.CatEars.domain.atomiccontext.CoatPatternName;
-import Crystalshard.CatEars.domain.identifier.CoatPatternId;
+import crystalshard.catears.domain.atomiccontext.CoatPatternName;
+import crystalshard.catears.domain.identifier.CoatPatternId;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;

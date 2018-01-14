@@ -1,11 +1,11 @@
-package Crystalshard.CatEars.adapter.configuration;
+package crystalshard.catears.adapter.configuration;
 
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static Crystalshard.CatEars.domain.LessCode.fmt;
+import static crystalshard.catears.domain.LessCode.fmt;
 
 public class PropertyStack {
 

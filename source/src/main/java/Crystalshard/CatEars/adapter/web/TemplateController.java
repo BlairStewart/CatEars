@@ -1,4 +1,4 @@
-package Crystalshard.CatEars.adapter.web;
+package crystalshard.catears.adapter.web;
 
 import spark.Spark;
 import spark.TemplateEngine;

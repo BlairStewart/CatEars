@@ -1,8 +1,8 @@
-package Crystalshard.CatEars.adapter;
+package crystalshard.catears.adapter;
 
-import Crystalshard.CatEars.domain.AppConfiguration;
-import Crystalshard.CatEars.domain.TokenGenerator;
-import Crystalshard.CatEars.domain.atomiccontext.AuthTokenStringContext;
+import crystalshard.catears.domain.AppConfiguration;
+import crystalshard.catears.domain.TokenGenerator;
+import crystalshard.catears.domain.atomiccontext.AuthTokenStringContext;
 import com.google.inject.Inject;
 
 import java.security.SecureRandom;
@@ -22,10 +22,11 @@ public class SecureRandomTokenGenerator implements TokenGenerator {
         return AuthTokenStringContext.of(randomString(appConfiguration.getAuthTokenLength()));
     }
 
-    private String randomString( int len ){
+    private String randomString ( int len ) {
         StringBuilder sb = new StringBuilder( len );
-        for( int i = 0; i < len; i++ )
+        for ( int i = 0; i < len; i++ ) {
             sb.append( ALPHA_STRING.charAt( secureRandom.nextInt(ALPHA_STRING.length()) ) );
+        }
         return sb.toString();
     }
 }

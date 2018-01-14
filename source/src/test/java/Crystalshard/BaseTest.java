@@ -1,8 +1,8 @@
-package Crystalshard;
+package crystalshard;
 
-import Crystalshard.CatEars.domain.identifier.CatId;
-import Crystalshard.CatEars.domain.identifier.CoatPatternId;
-import Crystalshard.CatEars.domain.identifier.PersonId;
+import crystalshard.catears.domain.identifier.CatId;
+import crystalshard.catears.domain.identifier.CoatPatternId;
+import crystalshard.catears.domain.identifier.PersonId;
 
 import java.net.URL;
 import java.util.Random;

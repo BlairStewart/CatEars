@@ -1,8 +1,8 @@
-package Crystalshard.CatEars.adapter.guice;
+package crystalshard.catears.adapter.guice;
 
-import Crystalshard.CatEars.adapter.configuration.PropertyAppConfiguration;
-import Crystalshard.CatEars.adapter.configuration.PropertyStack;
-import Crystalshard.CatEars.domain.AppConfiguration;
+import crystalshard.catears.adapter.configuration.PropertyStack;
+import crystalshard.catears.domain.AppConfiguration;
+import crystalshard.catears.adapter.configuration.PropertyAppConfiguration;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 

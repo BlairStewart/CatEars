@@ -1,6 +1,6 @@
-package Crystalshard.CatEars.domain;
+package crystalshard.catears.domain;
 
-import com.google.inject.Inject;
+//import com.google.inject.Inject;
 
 public class StateInitializer {
 
