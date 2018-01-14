@@ -1,0 +1,16 @@
+<!-- http://simpleicon.com/wp-content/uploads/radar.png -->
+<div class="map-wrapper">
+    <ng-map
+            default-style="false"
+            class="gmap"
+            zoom-to-include-markers="true"
+            style="height:100%;"
+    >
+        <marker ng-repeat="r in radarSites"
+                position="{{r.globalLocation.latitude}},{{r.globalLocation.longitude}}"
+                title="site: {{r.name}}"
+                optimized="false"
+                icon="{{r.active ? activeIcon : inactiveIcon}}"
+        ></marker>
+    </ng-map>
+</div>
