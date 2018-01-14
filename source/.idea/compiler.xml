@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="CatEars" />
         <module name="WhereIsTheRadar" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CatEars" target="1.8" />
       <module name="WhereIsTheRadar" target="1.8" />
     </bytecodeTargetLevel>
   </component>
